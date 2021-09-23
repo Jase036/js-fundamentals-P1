@@ -152,8 +152,8 @@ console.log('The total is:', total)
 ```
 let array = [1, 3, 7, 4, 5, 2, 1];
 let numberToSearchFor = 5;
-let item = array[i];
 for (let i = 0; i < array.length; i++) {
+    let item = array[i];
     if (item === numberToSearchFor) {
         console.log('Array includes the number!')
     }
