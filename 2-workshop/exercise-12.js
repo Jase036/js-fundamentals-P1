@@ -17,7 +17,7 @@ function exercise12() {
   // -----------------------------------------------------------------
   for (let number = 2; number <= 200; number++) {
     let notPrime = false;
-    for (var i = 2; i <= number; i++) {
+    for (let i = 2; i <= number; i++) {
         if (number%i===0 && i!==number) {
             notPrime = true;
         }
