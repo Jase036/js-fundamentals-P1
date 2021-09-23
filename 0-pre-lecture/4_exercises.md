@@ -27,9 +27,12 @@ Given this data structure:
 let data = [0, [], [], [1, 2, 3, [4]]];
 ```
 
-1. How would you access the value `0`?
-2. How would you access the value `3`?
-3. How would you access the value `4`?
+1. How would you access the value `0`?  
+'data[0]'
+2. How would you access the value `3`?  
+'data[3][3]'
+3. How would you access the value `4`?  
+'data[3][3][0]'
 
 ---
 
@@ -40,8 +43,8 @@ let data = [0, [], [], [1, 2, 3, [4]]];
 - For each property value, indicate its type.
 
 ```js
-{ label: 'corn', price: 5.3 + '$' };
-{ ISBN: 53532, isAvailable: true, author: 'Nakamoto' };
+{ label: 'corn', price: 5.3 + '$' }; 2 properties - label=corn (string), price=5.3$ (number + string)
+{ ISBN: 53532, isAvailable: true, author: 'Nakamoto' }; 3 properties - ISBN=53532 (number), isAvailable=true (boolean), author=Nakamoto (string)
 ```
 
 ---
@@ -56,5 +59,8 @@ let person = { name: "Bob", age: 23 };
 What is the value of the following expressions?
 
 1. person.name
+Bob
 2. person['name']
+Bob
 3. person[name]
+error (requires ',` or ")

@@ -44,7 +44,7 @@ Booleans can be combined to produce new boolean values.
 | Operator     | Description | Example                   |
 | ------------ | ----------- | ------------------------- |
 | &&           | AND         | _true && true_            |
-| &#124;&#124; | OR          | _true &#124;&#124; false_ |
+| ||           | OR          | _true || false_           |
 | !            | NOT         | _!false_                  |
 
 All of the examples in the table above evaluate to `true`.

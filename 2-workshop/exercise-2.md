@@ -44,16 +44,20 @@ easier to read. Like the gap between 2. and 1. in the example's solution.
 1. console.log('Sentence DOES NOT contain the word "Hello"');
 2. console.log('Sentence DOES contain the word "Hello"');
 3. if (sentence.includes('Hello')) {
-4. let sentence = 'Hello world!';
+4. 
 5. } else {
 6. }
 
 Put your solution between the ```:
 _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 
-```
-// Your solution here!
-
+``` js
+let sentence = 'Hello world!';
+if (sentence.includes('Hello')) {
+    console.log('Sentence DOES contain the word "Hello"');
+} else {
+    console.log('Sentence DOES NOT contain the word "Hello"');
+  }
 ```
 
 ## Question 2: Get the specified item in the nested array
@@ -65,8 +69,11 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 5. const third = 0;
 
 ```
-// Your solution here!
-
+const array = [[1, [2, 3]]];
+const first = 0;
+const second = 1;
+const third = 0;
+console.log(array[first][second][third])
 ```
 
 ## Question 3: Log all numbers from 10 to 5
@@ -79,8 +86,12 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 6. }
 
 ```
-// Your solution here!
-
+let currentNum = 10;
+let min = 5;
+while (currentNum > min) {
+    console.log(currentNum);
+    currentNum = currentNum - 1;
+}
 ```
 
 ## Question 4: Reverse the string to check for hidden messages
@@ -94,7 +105,13 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 7. const reversedString = reversedArray.join('');
 
 ```
-// Your solution here!
+const encodedMessage = 'gnidliub gruobuaF eht rednu deirub si erusaert ehT';
+const letterArray = encodedMessage.split('');
+const reversedArray = letterArray.reverse();
+const reversedString = reversedArray.join('');
+if (reversedString.includes('treasure')) {
+    console.log('Your message:', reversedString)
+}
 
 ```
 
@@ -109,7 +126,13 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 7. }
 
 ```
-// Your solution here!
+let total = 0;
+let count = 10;
+while (count > 0) {
+    total = total + count;
+    count = count - 1;
+}
+console.log('The total is:', total)
 
 ```
 
@@ -126,6 +149,12 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 9. }
 
 ```
-// Your solution here!
-
+let array = [1, 3, 7, 4, 5, 2, 1];
+let numberToSearchFor = 5;
+let item = array[i];
+for (let i = 0; i < array.length; i++) {
+    if (item === numberToSearchFor) {
+        console.log('Array includes the number!')
+    }
+}
 ```
