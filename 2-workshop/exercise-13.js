@@ -20,6 +20,16 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let a=1;
+  let b=0;
+  let i=50;
+  while (i >= 0) {
+    let tempsum = a;
+    a = a+b;
+    b = tempsum;
+    i--;
+  }
+  console.log(`the 50th number is ${b}`)
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

@@ -15,6 +15,15 @@ function exercise11() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let text1 =`#_#_#_#_`;
+  let text2 =`_#_#_#_#`
+  for (let i=0; i < 8; i++) {
+    if (i % 2 === 0) {
+      console.log(text1)
+    } else {
+      console.log(text2)
+    }
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
