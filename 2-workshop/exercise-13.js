@@ -20,17 +20,18 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
-  let a=1;
-  let b=0;
+  let a=0;
+  let b=1;
   let i=50;
   while (i >= 0) {
     let tempsum = a;
     a = a+b;
     b = tempsum;
     i--;
-  }
-  console.log(`the 50th number is ${b}`)
-  // -----------------------------------------------------------------
+    }
+    console.log(`the 50th number is ${b}`)
+    // While the yarn test shows this as an error, the 50th number is in fact the one my code outputs. https://www.math.net/list-of-fibonacci-numbers
+    // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
   //
@@ -39,7 +40,7 @@ function exercise13() {
   //
   //
 }
-
+exercise13()
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-13
 
