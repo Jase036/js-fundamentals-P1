@@ -16,7 +16,14 @@ _We will correct these exercises in class._
 7. true && false || true || false
 8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1
 ```
-
+1. true
+2. false
+3. true
+4. true
+5. true
+6. false
+7. true
+8. true
 ---
 
 ## Exercise 2
@@ -30,7 +37,7 @@ let data = [0, [], [], [1, 2, 3, [4]]];
 1. How would you access the value `0`?  
 'data[0]'
 2. How would you access the value `3`?  
-'data[3][3]'
+'data[3][2]'
 3. How would you access the value `4`?  
 'data[3][3][0]'
 
@@ -43,7 +50,7 @@ let data = [0, [], [], [1, 2, 3, [4]]];
 - For each property value, indicate its type.
 
 ```js
-{ label: 'corn', price: 5.3 + '$' }; 2 properties - label=corn (string), price=5.3$ (number + string)
+{ label: 'corn', price: 5.3 + '$' }; 2 properties - label=corn (string), price=5.3$ (number + string = string)
 { ISBN: 53532, isAvailable: true, author: 'Nakamoto' }; 3 properties - ISBN=53532 (number), isAvailable=true (boolean), author=Nakamoto (string)
 ```
 
@@ -63,4 +70,4 @@ Bob
 2. person['name']
 Bob
 3. person[name]
-error (requires ',` or ")
+undefined (requires ',` or ")

@@ -75,6 +75,7 @@ const second = 1;
 const third = 0;
 console.log(array[first][second][third])
 ```
+specified value = 2
 
 ## Question 3: Log all numbers from 10 to 5
 
