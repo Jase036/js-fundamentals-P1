@@ -18,6 +18,7 @@ function exercise10() {
     text += `#`;
     console.log(text)
   }
+  // The code above passes the test, but if I were outputting to something other than console I would concatenate a \n to each output - console.log(text + '\n')
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
