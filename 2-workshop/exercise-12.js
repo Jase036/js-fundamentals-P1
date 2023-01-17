@@ -18,14 +18,26 @@ function exercise12() {
   for (let number = 2; number <= 200; number++) {
     let notPrime = false;
     for (let i = 2; i <= number; i++) {
-        if (number%i===0 && i!==number) {
-            notPrime = true;
-        }
+      if (number % i === 0 && i !== number) {
+        notPrime = true;
+      }
     }
     if (notPrime === false) {
-                console.log(number);
+      console.log(number);
     }
   }
+
+  // for (let n = 2; n <= 200; n++) {
+  //   let p = true;
+  //   for (let d = 2; d <= n; d++) {
+  //     if (n % d === 0 && n !== d) {
+  //       p = false;
+  //     }
+  //   }
+  //   if (p === true) {
+  //     console.log(n);
+  //   }
+  // }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

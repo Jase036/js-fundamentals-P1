@@ -8,13 +8,13 @@ function exercise8() {
   // Write code between the lines (below)
   // -----------------------------------------------------------------
   // Decided to use array and reduce function here because why not?
-  const mult4 = []
+  const mult4 = [];
   for (let number = 0; number <= 5000; number++) {
     if (number % 4 === 0) {
-      mult4.push(number) ;
+      mult4.push(number);
     }
   }
-  const sum = mult4.reduce((a,b)=>a+b); 
+  const sum = mult4.reduce((a, b) => a + b);
   console.log(`The sum is ${sum}`);
   // -----------------------------------------------------------------
   // Write code between the lines (above)
